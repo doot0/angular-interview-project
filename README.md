@@ -10,7 +10,7 @@ The purpose of this take-home interview project is to assess your frontend devel
 - Code must be clean, readable, and commented where appropriate. 
 - You develop the most elegant solution, not the hackiest one. Use your design patterns.
 - **Absolutely no css bootstrap or other css frameworks (except less or sass)**. This job will require you to produce non-boilerplated css and html markdown. As such, I expect you to have a full and thorough understanding of their intricacies. In addition, overreliance on bootstrap drastically dilutes your understanding of these markdown languages.
-- The design must be polished to the best of your ability, and must be mobile responsive. 
+- The design must be polished to the best of your ability, and must be mobile responsive. Keep in mind the design and the ability to use HTML/CSS will be weighted heavily.
 - Project must be written in Angular.js. The reason for this is because that is what the current frontend is written in. You are allowed to use any Angular.js module.
 - The project must be organized in a way that allows it to scale gracefully.
 
