@@ -2,7 +2,7 @@
 
 **Do not fork this repository.** Instead, clone it and change the `git refs` to your own GitHub repo!
 
-The purpose of this take-home interview project is to assess how your frontend development skills in a more "real-world" context. This will be a very challenging project, and there will be a strict deadline of **3 days**.
+The purpose of this take-home interview project is to assess your frontend development skills in a more real-world context. This will be a very challenging project, and there will be a strict deadline of **3 days**.
 
 ### Expectations
 
