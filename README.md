@@ -27,7 +27,7 @@ The idea is this:
 There are additional specifications that must be completed as well:
 
 - On each server call, an access token must be provided. You can mock this as a random string.
-- **You must find a way to mock API calls** in a way that is **invisible to both** the controller and the factories themselves, so that they can produce the data you need to do the frontend, without requiring a real server.
+- **You must find a way to mock API calls** in a way that is **invisible to both** the controller and the content serving itself so that they can produce the data you need to do the frontend, without requiring a real server.
 - You must provide console logs. Additionally, you must set up the project to automatically modify all console logs so that you get the following behaviour:
   - `console.info`: All `console.info` logs are prepended automatically with "info:"
   - `console.log`: All `console.log` logs are prepended automatically with "log:"
