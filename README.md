@@ -16,7 +16,7 @@ The purpose of this take-home interview project is to assess your frontend devel
 
 ### Specifications
 
-The goal of this project is to produce a newsfeed. 
+The goal of this project is to produce a newsfeed for activities. 
 
 The idea is this: 
 
