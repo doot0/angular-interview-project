@@ -1,0 +1,19 @@
+{
+  "name": "angular-interview-project",
+  "version": "1.0.0",
+  "description": "**Do not fork this repository.** Instead, clone it and change the `git refs` to your own GitHub repo!",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doot0/angular-interview-project.git"
+  },
+  "author": "Dave Clarke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doot0/angular-interview-project/issues"
+  },
+  "homepage": "https://github.com/doot0/angular-interview-project"
+}
