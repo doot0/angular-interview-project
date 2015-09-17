@@ -7,7 +7,7 @@ The purpose of this take-home interview project is to assess your frontend devel
 ### Expectations
 
 - You write this code yourself. People tend to have a "signature" when they write code. Given this, I can recognize copy-pasted code very easily.
-- Code must be clean, readable, and commented where appropriate. 
+- Code must be clean, readable, and commented where appropriate.
 - You develop the most elegant solution, not the hackiest one. Use your design patterns.
 - **Absolutely no css bootstrap or other css frameworks (except less or sass)**. This job will require you to produce non-boilerplated css and html markdown. As such, I expect you to have a full and thorough understanding of their intricacies. In addition, overreliance on bootstrap drastically dilutes your understanding of these markdown languages.
 - The design must be polished to the best of your ability, and must be mobile responsive. Keep in mind the design and the ability to use HTML/CSS will be weighted heavily.
@@ -16,12 +16,12 @@ The purpose of this take-home interview project is to assess your frontend devel
 
 ### Specifications
 
-The goal of this project is to produce a newsfeed for activities. 
+The goal of this project is to produce a newsfeed for activities.
 
 The idea is this: 
 
 - As a user, you see a sidebar with a list of your "friends". You can click each friend in the sidebar and see their list of generated content. Or, you can click a button (e.g "All") to see the canonical newsfeed.
-
+§
 - Newsfeed stories can have different types. For example, you can have a newsfeed items that say "X added Y as a friend", "P liked Z item", "T uploaded a new photo". The design of the newsfeed items must be consistent (e.g. each have the ability to comment, favourite, etc). Hint: newsfeed items have 3 components: subject, action, object (e.g. X[subject] added[action] Y[object]).
 
 There are additional specifications that must be completed as well:

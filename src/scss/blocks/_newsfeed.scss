@@ -1,0 +1,58 @@
+#newsfeed{
+
+  padding: $ui-padding-primary;
+  max-width: 100%;
+
+}
+
+.activity-item{
+  font-size: .9em;
+  background : $ui-element-bg;
+  border: 1px solid $ui-border-color;
+  border-bottom-color: $ui-border-shadow-color;
+  border-radius: 2px;
+
+  & > *{
+    padding : $ui-padding-primary;
+  }
+
+  & + & {
+    margin-top: 1em;
+  }
+
+  & > * + *{ //target any child nodes inside an activity and space them out nicely
+    padding: 1em;
+  }
+
+}
+
+.activity-item-title{
+  font-size: .8em;
+  color: $ui-text-lighter-color;
+  border-bottom: 1px solid $ui-border-color;
+}
+
+.activity-primary-media{
+  padding-bottom: 0;
+}
+
+.activity-item-actions{
+  color: $ui-text-lighter-color;
+  font-size: .8em;
+  border-top: 1px solid rgba(0,0,0,.05);
+
+  & > *{
+    cursor: pointer;
+  }
+
+  & > * + *{
+    margin-left: .5em;
+  }
+
+}
+
+.activity-item-actions__like,
+.activity-item-actions__comment,
+.activity-item-actions__share{
+  display: inline-block;
+}

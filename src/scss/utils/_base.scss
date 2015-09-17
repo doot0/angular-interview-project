@@ -1,0 +1,60 @@
+/* Styles that cover everything, e.g. typography and far-reaching layout stuff */
+
+html{
+  background: #FAFAFA;
+  font-family: $ui-primary-font;
+  font-size: 16px;
+  min-height: 100%;
+  color: $ui-text-color;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: $heading-color;
+  margin-bottom: .33em;
+  font-weight: 900;
+}
+
+a, [ng-click]{
+  cursor: pointer;
+  transition: color .2s $ui-action-color;
+}
+
+.heading-context{
+  margin-left: .25em;
+  font-size: .5em;
+  vertical-align: middle;
+  color: rgba(0,0,0,.4);
+  font-weight: 300;
+
+  &:before{
+    content: '(';
+  }
+
+  &:after{
+    content: ')';
+  }
+
+}
+
+// UI components
+.ui-link{
+  color: $ui-action-color;
+  transition: .2s ease-out color;
+  text-decoration: none;
+
+  &:hover{
+    color: $ui-action-color-hover;
+  }
+
+}
+
+.ui-btn{
+  font-family: $ui-primary-font;
+  color: $ui-action-color;
+  border: 1px solid $ui-border-color;
+  border-bottom-color: $ui-border-shadow-color;
+  border-radius: $ui-border-radius-high;
+  background: $ui-element-bg;
+  padding: $ui-padding-primary/2 $ui-padding-primary;
+  margin-top: $ui-padding-primary;
+}

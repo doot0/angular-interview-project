@@ -1,0 +1,17 @@
+.grid-container{
+
+  margin: 0 auto;
+  width: $grid-maxwidth;
+  max-width: 100%;
+
+  .grid-item{
+    display: inline-block;
+    vertical-align: top;
+    &:after{
+      content: ' ';
+      display: table;
+      clear: both;
+    }
+  }
+
+}

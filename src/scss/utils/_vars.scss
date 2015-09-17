@@ -1,0 +1,31 @@
+// Viewports
+$small-breakpoint : 340px;
+
+// Grid
+$grid-maxwidth : 960px;
+
+// Colours
+$primary-background: #FAFAFA;
+$heading-color: rgba(0,0,0,.75);
+$primary-accent-color: #0084FF;
+
+// UI
+$ui-element-bg: #FFFFFF;
+$ui-action-color : #0084FF;
+$ui-action-color-hover : #66A9FF;
+
+$ui-text-color : rgba(0,0,0,.7);
+$ui-text-lighter-color : rgba(0,0,0,.5);
+$ui-text-dark-bg : rgba(255,255,255,.7);
+
+$ui-border-color: rgba(0,0,0,.07);
+$ui-border-shadow-color: rgba(0,0,0,.12);
+$ui-border-radius: 2px;
+
+$ui-border-radius-high : .66em;
+
+// UI :: Spacing
+$ui-padding-primary: 1em;
+
+// UI :: Font stacks
+$ui-primary-font: 'Roboto', sans-serif;
