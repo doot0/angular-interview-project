@@ -3,15 +3,23 @@
   margin: 0 auto;
   width: $grid-maxwidth;
   max-width: 100%;
+  position: relative;
+
+  &:after{
+    content: ' ';
+    display: table;
+    clear: both;
+  }
 
   .grid-item{
-    display: inline-block;
-    vertical-align: top;
+    float: left;
+
     &:after{
       content: ' ';
       display: table;
       clear: both;
     }
+
   }
 
 }

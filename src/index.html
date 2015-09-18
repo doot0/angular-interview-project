@@ -12,8 +12,15 @@
 
 <body>
   <main role="main" class="grid-container">
+    <div id="sidebar" class="grid-item" ng-init="friends = [{name:'Patrick', age:40, gender:'boy'},{name:'Samantha', age:60, gender:'girl'},{name:'Mackenzie', age:28, gender:'girl'}]">
+      <h2 class="ui-title">Friends</h2>
+      <ul class="friends" ng-controller="FriendsCtrl">
+        <li ng-repeat="friend in friends" class="friend-entry" ng-click="loadUserStories()"> <a href="#" class="ui-link"> <img src="http://placehold.it/32x32" width="16" height="16" class="friend-entry-icon"/> {{ friend.name }} </a> </li>
+      </ul>
+      <button class="ui-btn ui-link" ng-click="showTimeline()">Show all</button>
+    </div>
     <div id="newsfeed" class="grid-item">
-      <h2>Newsfeed
+      <h2 class="ui-title">Newsfeed
         <span class="heading-context">Patrick</span>
       </h2>
       <ul class="activities" ng-controller="ActivityCtrl">
@@ -23,6 +30,36 @@
             <a href="#" class="ui-link">Patrick</a> uploaded a photo.
           </div>
           <img class="activity-primary-media" src="http://placehold.it/640x320" width="640" height="320" alt="Media item description">
+          <div class="activity-item-comment">
+            Check out this photo!
+          </div>
+          <div class="activity-item-actions">
+            <a href="#" class="activity-item-actions__like ui-link">Like</a>
+            <a href="#" class="activity-item-actions__comment ui-link">Comment</a>
+            <a href="#" class="activity-item-actions__share ui-link">Share</a>
+          </div>
+        </li>
+
+        <li class="activity-item activity-item__media">
+          <div class="activity-item-title">
+            <a href="#" class="ui-link">Patrick</a> uploaded a photo.
+          </div>
+          <img class="activity-primary-media" src="http://placehold.it/640x320" width="640" height="320" alt="Media item description">
+          <div class="activity-item-comment">
+            Check out this photo!
+          </div>
+          <div class="activity-item-actions">
+            <a href="#" class="activity-item-actions__like ui-link">Like</a>
+            <a href="#" class="activity-item-actions__comment ui-link">Comment</a>
+            <a href="#" class="activity-item-actions__share ui-link">Share</a>
+          </div>
+        </li>
+
+        <li class="activity-item activity-item__media">
+          <div class="activity-item-title">
+            <a href="#" class="ui-link">Patrick</a> uploaded a photo.
+          </div>
+          <img class="activity-primary-media" src="http://placehold.it/640x640" width="640" height="640" alt="Media item description">
           <div class="activity-item-comment">
             Check out this photo!
           </div>
@@ -56,13 +93,6 @@
         </li>
 
       </ul>
-    </div>
-    <div id="sidebar" class="grid-item" ng-init="friends = [{name:'Patrick', age:40, gender:'boy'},{name:'Samantha', age:60, gender:'girl'},{name:'Mackenzie', age:28, gender:'girl'}]">
-      <h2>Friends</h2>
-      <ul class="friends" ng-controller="FriendsCtrl">
-        <li ng-repeat="friend in friends" class="friend-entry" ng-click="loadUserStories()"> <a href="#" class="ui-link">{{ friend.name }}</a> </li>
-      </ul>
-      <button class="ui-btn ui-link" ng-click="showTimeline()">Show all</button>
     </div>
   </main>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script> -->

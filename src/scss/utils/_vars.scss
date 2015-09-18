@@ -1,8 +1,16 @@
-// Viewports
-$small-breakpoint : 340px;
+// Breakpoints
+$breakpoint-small : 340px;
+$breakpoint-newsfeed : 640px;
+$breakpoint-medium : 768px;
+$breakpoint-large : 960px;
 
 // Grid
 $grid-maxwidth : 960px;
+$grid-half : percentage( ($grid-maxwidth / 2) / $grid-maxwidth );
+$grid-third : percentage( ($grid-maxwidth / 3) / $grid-maxwidth );
+$grid-quarter : percentage( ($grid-maxwidth / 4) / $grid-maxwidth );
+$grid-twothirds : percentage( ($grid-maxwidth / 3) * 2 / $grid-maxwidth );
+$grid-threequarters : percentage( ($grid-maxwidth/4) * 3 / $grid-maxwidth );
 
 // Colours
 $primary-background: #FAFAFA;

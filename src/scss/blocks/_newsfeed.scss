@@ -1,7 +1,10 @@
 #newsfeed{
 
   padding: $ui-padding-primary;
-  max-width: 100%;
+
+  @media screen and (min-width: $breakpoint-newsfeed){
+    width: $grid-threequarters;
+  }
 
 }
 
@@ -11,6 +14,8 @@
   border: 1px solid $ui-border-color;
   border-bottom-color: $ui-border-shadow-color;
   border-radius: 2px;
+
+  max-width: $breakpoint-newsfeed;
 
   & > *{
     padding : $ui-padding-primary;
@@ -22,6 +27,14 @@
 
   & > * + *{ //target any child nodes inside an activity and space them out nicely
     padding: 1em;
+  }
+
+}
+
+.activity-item__media{
+
+  .activity-primary-media{
+
   }
 
 }

@@ -8,15 +8,9 @@ html{
   color: $ui-text-color;
 }
 
-h1, h2, h3, h4, h5, h6{
-  color: $heading-color;
-  margin-bottom: .33em;
-  font-weight: 900;
-}
-
 a, [ng-click]{
   cursor: pointer;
-  transition: color .2s $ui-action-color;
+  transition: color .2s;
 }
 
 .heading-context{
@@ -57,4 +51,17 @@ a, [ng-click]{
   background: $ui-element-bg;
   padding: $ui-padding-primary/2 $ui-padding-primary;
   margin-top: $ui-padding-primary;
+  outline: 0;
+
+  &:active{
+    border-top-color: $ui-border-shadow-color;
+    border-bottom-color: $ui-border-color;
+  }
+
+}
+
+.ui-title{
+  font-weight: 300;
+  margin-bottom: .33em;
+  color: $heading-color;
 }

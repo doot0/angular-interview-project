@@ -2,13 +2,25 @@
 
   padding: $ui-padding-primary;
 
+  @media screen and (min-width: $breakpoint-newsfeed){
+    position: fixed;
+    left: $grid-threequarters;
+    width: $grid-quarter;
+  }
+
   .friend-entry{
     font-size: .9em;
 
-    & + {
+    & + & {
       margin-top: 1em;
     }
 
+  }
+
+  .friend-entry-icon{
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: $ui-border-radius;
   }
 
 }

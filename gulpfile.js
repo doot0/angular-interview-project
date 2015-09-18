@@ -5,6 +5,7 @@ var sass      = require('gulp-sass');
 var csso      = require('gulp-csso');
 var uglify    = require('gulp-uglify');
 var concat    = require('gulp-concat');
+var prefixer  = require('gulp-autoprefixer');
 var del       = require('del');
 
 gulp.task('clean', function(cb){
@@ -30,8 +31,11 @@ gulp.task('scssbreakpoints', function(){
 gulp.task('scssmain', function(){
   return gulp.src('./src/scss/app.scss')
   .pipe(sass({
-    style : 'compressed'
+
   }))
+  // .pipe(prefixer({
+  //   browsers : ['last 2 versions']
+  // }))
   .pipe(csso())
   .pipe(gulp.dest('./build/css/'));
 });
