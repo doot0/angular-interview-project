@@ -12,12 +12,12 @@
 
 <body>
   <main role="main" class="grid-container">
-    <div id="sidebar" class="grid-item" ng-init="friends = [{name:'Patrick', age:40, gender:'boy'},{name:'Samantha', age:60, gender:'girl'},{name:'Mackenzie', age:28, gender:'girl'}]">
+    <div id="sidebar" class="grid-item"  ng-controller="FriendsCtrl">
       <h2 class="ui-title">Friends</h2>
-      <ul class="friends" ng-controller="FriendsCtrl">
+      <ul class="friends">
         <li ng-repeat="friend in friends" class="friend-entry" ng-click="loadUserStories()"> <a href="#" class="ui-link"> <img src="http://placehold.it/32x32" width="16" height="16" class="friend-entry-icon"/> {{ friend.name }} </a> </li>
       </ul>
-      <button class="ui-btn ui-link" ng-click="showTimeline()">Show all</button>
+      <button class="ui-btn ui-link" ng-click="showTimeline()">Show stories from all ({{ friends.length }})</button>
     </div>
     <div id="newsfeed" class="grid-item">
       <h2 class="ui-title">Newsfeed
@@ -25,6 +25,8 @@
       </h2>
       <ul class="activities" ng-controller="ActivityCtrl">
 
+        <!-- // ideally these "activity-item"s should be implemented as directives rendered in an ng-repeat for each activity per friend -->
+        <!-- // each item should be filterable using the FriendsCtrl -->
         <li class="activity-item activity-item__media">
           <div class="activity-item-title">
             <a href="#" class="ui-link">Patrick</a> uploaded a photo.
@@ -91,6 +93,62 @@
             <a href="#" class="activity-item-actions__share ui-link">Share</a>
           </div>
         </li>
+
+        <li class="activity-item activity-item__add">
+          <div class="activity-item-comment">
+            <a href="#" class="ui-link">Patrick</a> added <a href="#" class="ui-link">Mackenzie</a>.
+          </div>
+          <div class="activity-item-actions">
+            <a href="#" class="activity-item-actions__like ui-link">Like</a>
+            <a href="#" class="activity-item-actions__comment ui-link">Comment</a>
+            <a href="#" class="activity-item-actions__share ui-link">Share</a>
+          </div>
+        </li>
+
+        <li class="activity-item activity-item__add">
+          <div class="activity-item-comment">
+            <a href="#" class="ui-link">Patrick</a> added <a href="#" class="ui-link">Mackenzie</a>.
+          </div>
+          <div class="activity-item-actions">
+            <a href="#" class="activity-item-actions__like ui-link">Like</a>
+            <a href="#" class="activity-item-actions__comment ui-link">Comment</a>
+            <a href="#" class="activity-item-actions__share ui-link">Share</a>
+          </div>
+        </li>
+
+        <li class="activity-item activity-item__add">
+          <div class="activity-item-comment">
+            <a href="#" class="ui-link">Patrick</a> added <a href="#" class="ui-link">Mackenzie</a>.
+          </div>
+          <div class="activity-item-actions">
+            <a href="#" class="activity-item-actions__like ui-link">Like</a>
+            <a href="#" class="activity-item-actions__comment ui-link">Comment</a>
+            <a href="#" class="activity-item-actions__share ui-link">Share</a>
+          </div>
+        </li>
+
+        <li class="activity-item activity-item__add">
+          <div class="activity-item-comment">
+            <a href="#" class="ui-link">Patrick</a> added <a href="#" class="ui-link">Mackenzie</a>.
+          </div>
+          <div class="activity-item-actions">
+            <a href="#" class="activity-item-actions__like ui-link">Like</a>
+            <a href="#" class="activity-item-actions__comment ui-link">Comment</a>
+            <a href="#" class="activity-item-actions__share ui-link">Share</a>
+          </div>
+        </li>
+
+        <li class="activity-item activity-item__add">
+          <div class="activity-item-comment">
+            <a href="#" class="ui-link">Patrick</a> added <a href="#" class="ui-link">Mackenzie</a>.
+          </div>
+          <div class="activity-item-actions">
+            <a href="#" class="activity-item-actions__like ui-link">Like</a>
+            <a href="#" class="activity-item-actions__comment ui-link">Comment</a>
+            <a href="#" class="activity-item-actions__share ui-link">Share</a>
+          </div>
+        </li>
+
 
       </ul>
     </div>
