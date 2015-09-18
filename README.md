@@ -1,3 +1,11 @@
+# Installation
+
+Run `npm install --save-dev` to install dependencies, then `gulp` or `gulp default` to compile assets.
+
+Gulp will fail on certain errors e.g. SCSS/JS syntax issues; fix them first then re-run `gulp watch` to continue.
+
+##### Old readme below;
+
 ### Angular Interview Project
 
 **Do not fork this repository.** Instead, clone it and change the `git refs` to your own GitHub repo!
@@ -18,7 +26,7 @@ The purpose of this take-home interview project is to assess your frontend devel
 
 The goal of this project is to produce a newsfeed for activities.
 
-The idea is this: 
+The idea is this:
 
 - As a user, you see a sidebar with a list of your "friends". You can click each friend in the sidebar and see their list of generated content. Or, you can click a button (e.g "All") to see the canonical newsfeed.
 §
