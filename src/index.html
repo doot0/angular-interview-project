@@ -19,11 +19,11 @@
       </ul>
       <button class="ui-btn ui-link" ng-click="showTimeline()">Show stories from all ({{ friends.length }})</button>
     </div>
-    <div id="newsfeed" class="grid-item">
+    <div id="newsfeed" class="grid-item" ng-controller="FeedCtrl">
       <h2 class="ui-title">Newsfeed
         <span class="heading-context">Patrick</span>
       </h2>
-      <ul class="activities" ng-controller="ActivityCtrl">
+      <ul class="activities">
 
         <!-- // ideally these "activity-item"s should be implemented as directives rendered in an ng-repeat for each activity per friend -->
         <!-- // each item should be filterable using the FriendsCtrl -->

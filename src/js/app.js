@@ -22,7 +22,7 @@
 
 }])
 
-.controller('ActivityCtrl', ['$scope', function($scope){
+.controller('FeedCtrl', ['$scope', function($scope){
 
   $scope.activities = [
     {author: 'Patrick', type: 'add', ts: 1442411533, data: {
